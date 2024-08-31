@@ -1,4 +1,4 @@
-import { useState } from "react"
+import PropTypes from "prop-types";
 
 export default function TodoInput(props) {
     const { handleAddTodos, todoValue, setTodoValue } = props
@@ -14,3 +14,9 @@ export default function TodoInput(props) {
         </header>
     )
 }
+
+TodoInput.propTypes = {
+    handleAddTodos: PropTypes.func,
+    todoValue: PropTypes.string,
+    setTodoValue: PropTypes.func,
+};

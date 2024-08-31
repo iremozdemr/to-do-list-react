@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from "prop-types";
 
 export default function TodoCard(props) {
     const { children, handleDeleteTodo, index, handleEditTodo } = props
@@ -20,3 +20,10 @@ export default function TodoCard(props) {
         </li>
     )
 }
+
+TodoCard.propTypes = {
+    children: PropTypes.node,
+    handleDeleteTodo: PropTypes.func,
+    index: PropTypes.number,
+    handleEditTodo: PropTypes.func,
+};
