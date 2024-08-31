@@ -79,6 +79,8 @@ p {
   padding: 14px;
   border-radius: 14px;
   background: white;
+
+  margin-top: 10px;
 }
 
 .todoItem p {
